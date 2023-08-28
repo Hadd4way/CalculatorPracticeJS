@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap" rel="stylesheet">
+    <title>calculator</title>
+</head>
+<body>
+    <main class="calculator">
+        <h1>calculator</h1>
+        <form action="" onsubmit="solution(event)">
+            <input type="text" name="calculatorResult" placeholder="Результат...">
+            <div class="form__row__one row">
+                <button type="button" onclick="changeInput(this)">7</button>
+                <button type="button" onclick="changeInput(this)">8</button>
+                <button type="button" onclick="changeInput(this)">9</button>
+                <button type="button" onclick="changeInput(this)">-</button>
+            </div>
+            <div class="form__row__two row">
+                <button type="button" onclick="changeInput(this)">4</button>
+                <button type="button" onclick="changeInput(this)">5</button>
+                <button type="button" onclick="changeInput(this)">6</button>
+                <button type="button" onclick="changeInput(this)">+</button>
+            </div>
+            <div class="form__row__three row">
+                <button type="button" onclick="changeInput(this)">1</button>
+                <button type="button" onclick="changeInput(this)">2</button>
+                <button type="button" onclick="changeInput(this)">3</button>
+                <button type="button" onclick="changeInput(this)">÷</button>
+            </div>
+            <div class="form__row__three row">
+                <button class="button__zero" type="button" onclick="changeInput(this)">0</button>
+                <button type="button" onclick="changeInput(this)">.</button>
+                <button type="submit"">=</button>
+            </div>
+            <button class="button__ac" onclick="page.input.value=''">AC</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
